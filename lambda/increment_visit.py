@@ -10,23 +10,23 @@ table = dynamodb.Table("Website_Visit_Count")
 now = strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
 
 # load menu to database
-def lambda_handler(event, context): 
+def lambda_handler(event, context):
     response = table.update_item(
         Key={
             'domain': event['domain'],
         },
         UpdateExpression="set #count = :c",
-        ExpressionAttributeNames = {
+        ExpressionAttributeNames={
             '#count': 'count',
         },
-        ExpressionAttributeValues = {
+        ExpressionAttributeValues={
             ':c': int(event['count']),
         },
         ReturnValues="UPDATED_NEW"
     )
-    
-# return a properly formatted JSON object
+
+    # return a properly formatted JSON object
     return {
-    'statusCode': 200,
-    'body': json.dumps('Success')
+        'statusCode': 200,
+        'body': json.dumps('Success')
     }

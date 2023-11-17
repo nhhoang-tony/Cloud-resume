@@ -8,9 +8,9 @@
     background-color: rgb(4, 8, 48);
     color: white;
     overflow-x: hidden;
-  }
+}
 
-  .sidebar a {
+.sidebar a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
@@ -19,21 +19,22 @@
     padding-top: 10%;
     text-align: center;
     transition: color 200ms ease;
-  }
-  
-  .sidebar a:hover {
+}
+
+.sidebar a:hover {
     transition: color 200ms ease;
     font-size: 20px;
     color: #ee7c22;
-  }
-  
-  .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-  }
+}
 
-  /* make sidebar center */
-  .middle {
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+/* make sidebar center */
+.middle {
     text-align: center;
     position: relative;
     top: 25%;
@@ -64,7 +65,7 @@
     padding-bottom: 2%;
 }
 
-.about-grid-container > div {
+.about-grid-container>div {
     margin: 2%;
 }
 
@@ -100,7 +101,7 @@
 .about-name {
     font-size: 36px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     text-transform: uppercase;
     font-weight: bolder;
@@ -110,7 +111,7 @@
 .about-title {
     font-size: 24px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     font-weight: bold;
 }
@@ -118,7 +119,7 @@
 .about-description {
     font-size: 18px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     padding-top: 3%;
     padding-left: 0%;
@@ -129,14 +130,14 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.about-contact > div {
+.about-contact>div {
     margin: 5%;
 }
 
 .about-contact-info {
     font-size: 18px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     flex: 40%;
 }
@@ -144,13 +145,14 @@
 .about-contact-website {
     font-size: 18px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     flex: 40%;
 }
 
 .contact-icon {
     font-size: 16px;
+    width: 16px;
     margin-right: 2%;
 }
 
@@ -167,7 +169,7 @@
 }
 
 .hyperlink:visited {
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
 }
 
 .hyperlink:active {
@@ -189,7 +191,7 @@
 .section-header {
     font-size: 36px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     text-transform: uppercase;
     font-weight: bolder;
@@ -198,7 +200,7 @@
 .education-header {
     font-size: 24px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     float: left;
     font-weight: bold;
@@ -210,7 +212,7 @@
 .education-date {
     font-size: 20px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     float: right;
     padding-right: 5%;
@@ -220,7 +222,7 @@
 .education-degree {
     font-size: 20px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     float: left;
     padding-left: 5%;
@@ -230,7 +232,7 @@
 .education-location {
     font-size: 20px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     float: right;
     padding-right: 5%;
@@ -240,7 +242,7 @@
 .education-detail {
     font-size: 18px;
     font-family: 'montserrat';
-    color:rgb(4, 8, 48);
+    color: rgb(4, 8, 48);
     text-align: left;
     padding-left: 5%;
     padding-right: 8%;
@@ -250,6 +252,4 @@
 /* Make scroll smooth */
 html {
     scroll-behavior: smooth;
-  }
-
-  
+}

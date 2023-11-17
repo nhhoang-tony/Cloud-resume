@@ -22,14 +22,12 @@ def handle_decimal_type(obj):
     raise TypeError
 
 # scan through all database
-def lambda_handler(event, context): 
+def lambda_handler(event, context):
     response = table.scan()
     items = response['Items']
-    
-# return a properly formatted JSON object
-    return {
-    'statusCode': 200,
-    'body': json.dumps(items, default=handle_decimal_type)
-    }
-    
 
+    # return a properly formatted JSON object
+    return {
+        'statusCode': 200,
+        'body': json.dumps(items, default=handle_decimal_type)
+    }
