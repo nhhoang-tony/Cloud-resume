@@ -60,7 +60,7 @@ function increment_visit(count) {
         .then(response => response.text())
         .then(result => {
             console.log(result);
-            document.getElementById('count').innerHTML = `Visit: ${count.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}`;
+            document.getElementById('count').innerHTML = `Views: ${count.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}`;
         })
         .catch(error => console.log('error', error));
 }

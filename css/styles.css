@@ -108,6 +108,17 @@
     padding-top: 0%;
 }
 
+.name {
+    color: rgb(4, 8, 48);
+    transition: color 200ms ease;
+}
+
+.name:hover {
+    color: #ee7c22 !important;
+    text-decoration: initial;
+    transition: color 200ms ease;
+}
+
 .about-title {
     font-size: 24px;
     font-family: 'montserrat';
@@ -159,7 +170,6 @@
 .hyperlink {
     color: rgb(4, 8, 48);
     transition: color 200ms ease;
-    text-decoration: underline;
 }
 
 .hyperlink:hover {
