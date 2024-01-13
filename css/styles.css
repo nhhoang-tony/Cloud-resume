@@ -46,8 +46,9 @@
 /* Page visit count*/
 .count {
     background-color: rgb(245, 245, 252);
-    text-align: right;
-    padding-right: 5%;
+    text-align: left;
+    padding-left: 23%;
+    padding-top: 2%;
     font-size: 16px;
     font-weight: bold;
 }
@@ -170,6 +171,7 @@
 .hyperlink {
     color: rgb(4, 8, 48);
     transition: color 200ms ease;
+    text-decoration: underline;
 }
 
 .hyperlink:hover {
