@@ -1,7 +1,6 @@
 # import the JSON utility package since we will be working with a JSON object
 import json
 import boto3
-
 from time import gmtime, strftime
 
 # initiate connection to database
