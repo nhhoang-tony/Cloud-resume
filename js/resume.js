@@ -29,7 +29,7 @@ async function get_visit() {
     var count;
     var domains = JSON.parse(data);
     for (let i = 0; i < domains.length; i++) {
-        if (domains[i].domain == 'tonynguyen61.com') {
+        if (domains[i].domain == 'resume.tonynguyen61.com') {
 
             count = domains[i].count;
         }
@@ -46,7 +46,7 @@ function increment_visit(count) {
     // add content type header to object
     myHeaders.append("Content-Type", "application/json");
     // using built in JSON utility package turn object to string and store in a variable
-    var raw = JSON.stringify({ "count": count, "domain": "tonynguyen61.com" });
+    var raw = JSON.stringify({ "count": count, "domain": "resume.tonynguyen61.com" });
     // using built in JSON utility package turn object to string and store in a variable
     var requestOptions = {
         method: 'POST',
